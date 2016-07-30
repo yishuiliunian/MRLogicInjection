@@ -9,4 +9,4 @@
 #import <Foundation/Foundation.h>
 
 Class MRExtendClass(Class baseClass, NSArray* logicClasses, NSString* key);
-void MRExtendInstanceLogic(id object, NSArray* logicClasses);
+id MRExtendInstanceLogic(id object, NSArray* logicClasses);

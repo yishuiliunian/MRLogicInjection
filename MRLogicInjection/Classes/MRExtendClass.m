@@ -8,7 +8,7 @@
 
 #import "MRExtendClass.h"
 #import <objc/runtime.h>
-NSString* KMRExtendClassKey = @"MR_EXTEND_";
+NSString* const KMRExtendClassKey = @"__MR_EXTEND_";
 
 Class MRExtendLogicCLass(Class baseClass, Class logicClass, NSString* key) {
     
@@ -36,10 +36,14 @@ Class MRExtendClass(Class baseClass, NSArray* logicClasses, NSString* key) {
 }
 
 
-void MRExtendInstanceLogic(id object, NSArray* logicClasses) {
+id  MRExtendInstanceLogic(id object, NSArray* logicClasses) {
     if (!object) {
-        return;
+        return nil;
+    }
+    if ([NSStringFromClass([object class]) hasPrefix:KMRExtendClassKey] ) {
+        return object;
     }
     Class cla = MRExtendClass([object class], logicClasses, KMRExtendClassKey);
     object_setClass(object, cla);
+    return object;
 }

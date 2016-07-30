@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "88691D031F587C6C381D4C777E7313C3EF0CD01B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1B23271DFD8F6C89B88A32538D78366B7561A866" : 0,
+    "88691D031F587C6C381D4C777E7313C3EF0CD01B" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "16F45C48-1AE1-46BC-8234-F9788B026AE3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1B23271DFD8F6C89B88A32538D78366B7561A866" : "..",
+    "88691D031F587C6C381D4C777E7313C3EF0CD01B" : "MRLogicInjection\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MRLogicInjection",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/MRLogicInjection.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/www.catchitime.com:8022\/diffusion\/YH\/yaohe.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1B23271DFD8F6C89B88A32538D78366B7561A866"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yishuiliunian\/MRLogicInjection.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "88691D031F587C6C381D4C777E7313C3EF0CD01B"
+    }
+  ]
+}
