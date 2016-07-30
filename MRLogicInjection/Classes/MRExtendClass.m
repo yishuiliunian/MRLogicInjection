@@ -47,3 +47,16 @@ id  MRExtendInstanceLogic(id object, NSArray* logicClasses) {
     object_setClass(object, cla);
     return object;
 }
+
+id MRRemoveExtendLogic(id object)
+{
+    NSString* className = NSStringFromClass([object class]);
+    if ([className hasPrefix:KMRExtendClassKey]) {
+        NSString* originClassName = [className substringFromIndex:KMRExtendClassKey.length];
+        Class originClass = NSClassFromString(originClassName);
+        if (originClass) {
+            object_setClass(object, originClass);
+        }
+    }
+    return object;
+}
