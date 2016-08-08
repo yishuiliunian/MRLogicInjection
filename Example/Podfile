@@ -6,6 +6,5 @@ target 'MRLogicInjection_Example' do
   target 'MRLogicInjection_Tests' do
     inherit! :search_paths
 
-    pod 'FBSnapshotTestCase'
   end
 end

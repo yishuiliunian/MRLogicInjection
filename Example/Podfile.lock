@@ -1,23 +1,16 @@
 PODS:
-  - FBSnapshotTestCase (2.1.1):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.1)
-  - FBSnapshotTestCase/Core (2.1.1)
-  - FBSnapshotTestCase/SwiftSupport (2.1.1):
-    - FBSnapshotTestCase/Core
   - MRLogicInjection (0.1.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
   - MRLogicInjection (from `../`)
 
 EXTERNAL SOURCES:
   MRLogicInjection:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 432afd8d059ccef7f207225894840a03fbcf7474
   MRLogicInjection: 299b6ed041a800f6e16bc59e9cbecddc0ad3e8ec
 
-PODFILE CHECKSUM: 4d9a9a0178ff85462ed8f0e036103cb9655e88b1
+PODFILE CHECKSUM: b36ebe5dec9dbddd4c6f45ac802059e902dc0caa
 
 COCOAPODS: 1.0.1
