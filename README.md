@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/MRLogicInjection.svg?style=flat)](http://cocoapods.org/pods/MRLogicInjection)
 
 ## 介绍
-仿照KVO实现原理，构建AOP编程模式，中逻辑注入的基础组件库。核心机制复杂，但是代码简单。主要依赖isa-swizzing和method-swizzing两项技术。该库主要针对于instance的业务逻辑注入，只对一个内存实例生效。而不是一整个类别。因而，具有场景化的特点，不会造成类污染。只需要在需要特定场景中的特定实例上使用该库就OK。
+仿照KVO实现原理，构建AOP(切面范式)编程模式中逻辑注入的基础组件库。核心机制复杂，但是代码简单。主要依赖isa-swizzing和method-swizzing两项技术。该库主要针对于instance进行业务逻辑注入，只对一个内存实例生效，而不是一整个类。因而，具有场景化的特点，不会造成类污染。只需要在需要特定场景中的特定实例上使用该库就OK。
 
 
 ## 安装
