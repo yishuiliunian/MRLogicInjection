@@ -35,18 +35,25 @@ Class MRExtendClass(Class baseClass, NSArray* logicClasses, NSString* key) {
     return aimCla;
 }
 
-
-id  MRExtendInstanceLogic(id object, NSArray* logicClasses) {
+id  MRExtendInstanceLogicWithKey(id object,NSString* logicKey,  NSArray* logicClasses) {
     if (!object) {
         return nil;
     }
-    if ([NSStringFromClass([object class]) hasPrefix:KMRExtendClassKey] ) {
+    if (logicKey.length == 0) {
+        return nil;
+    }
+    if ([NSStringFromClass([object class]) hasPrefix:logicKey] ) {
         return object;
     }
-    Class cla = MRExtendClass([object class], logicClasses, KMRExtendClassKey);
+    Class cla = MRExtendClass([object class], logicClasses, logicKey);
     object_setClass(object, cla);
     return object;
 }
+
+id  MRExtendInstanceLogic(id object, NSArray* logicClasses) {
+    return MRExtendInstanceLogicWithKey(object, KMRExtendClassKey, logicClasses);
+}
+
 
 id MRRemoveExtendLogic(id object)
 {
