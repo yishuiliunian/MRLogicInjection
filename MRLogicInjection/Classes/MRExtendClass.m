@@ -141,10 +141,6 @@ id MRRemoveExtendSpecialLogic(id object, NSString* logicKey)
     if (!endClass) {
         endClass = claItor;
     }
-    if (startClass) {
-        class_setSuperclass(startClass, endClass);
-        endClass = startClass;
-    }
     object_setClass(object, endClass);
     return object;
 }
