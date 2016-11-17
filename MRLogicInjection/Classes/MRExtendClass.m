@@ -47,7 +47,10 @@ Class MRExtendLogicCLass(Class baseClass, Class logicClass, NSString* key) {
     NSString* name = [key stringByAppendingString:NSStringFromClass(baseClass)];
     Class cla = NSClassFromString(name);
     if (!cla) {
+        //alloc class pair
         cla = objc_allocateClassPair(baseClass, name.UTF8String, 0);
+        //never try to add ivar to the new class, or you will find place using a wrong map.
+        //register the class
         objc_registerClassPair(cla);
     }
     [(id)cla setMr_injection_logic_key:key];
