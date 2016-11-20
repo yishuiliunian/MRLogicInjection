@@ -99,7 +99,7 @@ id  MRExtendInstanceLogic(id object, NSArray* logicClasses) {
     return MRExtendInstanceLogicWithKey(object, KMRExtendClassKey, logicClasses);
 }
 
-
+//wrong API, the method cached will cause crash, if you want to do this please remove the cached method
 id MRRemoveExtendLogic(id object)
 {
     if (!object) {
@@ -117,7 +117,7 @@ id MRRemoveExtendLogic(id object)
     }
     return object;
 }
-
+//wrong API, the method cached will cause crash
 id MRRemoveExtendSpecialLogic(id object, NSString* logicKey)
 {
     if (!object) {
