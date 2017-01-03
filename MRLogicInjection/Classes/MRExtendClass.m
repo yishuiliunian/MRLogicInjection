@@ -23,7 +23,7 @@
 
 @implementation NSObject(MRInjectionLogicKey)
 
-static const char * kMRInjectionClassMap = &kMRInjectionClassMap;
+static void * kMRInjectionClassMap = &kMRInjectionClassMap;
 
 - (NSString*) mr_injection_logic_key
 {

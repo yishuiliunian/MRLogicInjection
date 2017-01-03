@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MRLogicInjection'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '使用AOP进行业务逻辑注入的通用底层库'
 
 # This description is used to generate tags and improve search results.
