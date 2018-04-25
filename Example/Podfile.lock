@@ -1,16 +1,18 @@
 PODS:
-  - MRLogicInjection (0.1.0)
+  - MRLogicInjection (0.1.1)
 
 DEPENDENCIES:
   - MRLogicInjection (from `../`)
 
 EXTERNAL SOURCES:
   MRLogicInjection:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  MRLogicInjection: 299b6ed041a800f6e16bc59e9cbecddc0ad3e8ec
+  MRLogicInjection: 441443a5a9b416b18c4dfbb0501863df29bc1d00
 
 PODFILE CHECKSUM: b36ebe5dec9dbddd4c6f45ac802059e902dc0caa
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.5.0
+
+COCOAPODS DEPLOY: 0.0.11

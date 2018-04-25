@@ -9,4 +9,5 @@
 #ifndef MRLogicInjection_h
 #define MRLogicInjection_h
 #import "MRExtendClass.h"
+#import "MRCheckSuper.h"
 #endif /* MRLogicInjection_h */

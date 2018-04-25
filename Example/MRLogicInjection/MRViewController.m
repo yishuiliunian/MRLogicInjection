@@ -7,7 +7,7 @@
 //
 
 #import "MRViewController.h"
-
+#import "RedColorLogic.h"
 @interface MRViewController ()
 
 @end
@@ -17,6 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    MRExtendInstanceLogic(self.view, @[[RedColorLogic class]]);
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

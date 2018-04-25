@@ -7,122 +7,163 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A0005A0CB2CD12B9A627E5478A4D7A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		28D55930EE09606280DC89569812BCEF /* Pods-MRLogicInjection_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED8F6C24D924EAFE5D8B439856C02DD /* Pods-MRLogicInjection_Tests-dummy.m */; };
-		29B1889D2EDD589BA02E7BCA4B7D7FEF /* Pods-MRLogicInjection_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AA3B0650595301F6393B017A439350 /* Pods-MRLogicInjection_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AADEEF18F6504142D1D1638B5AB8FE6 /* MRLogicInjection.h in Headers */ = {isa = PBXBuildFile; fileRef = E3113FB5EAF415CBAE99458C74155AA4 /* MRLogicInjection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		76727ACEAB650FEBDF16A346EBE2977B /* MRLogicInjection-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A7992B1F9C23D24C6B78C36F9B107BA /* MRLogicInjection-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B8DEE11E1DEB82A1A24DD81F14DE110 /* MRExtendClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 5941DE1EAC7557F01B8B74A24825B97E /* MRExtendClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF0876D67E3C8F9505C2ECD2D1AB4194 /* Pods-MRLogicInjection_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B557EAE4E7388FC1E5A9D68CAFDFCA91 /* Pods-MRLogicInjection_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2A6E83403F72B3FB9076C2125CCE71A /* MRLogicInjection-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8AF3CE646CB6D13E5465EDB68A1EB21 /* MRLogicInjection-dummy.m */; };
-		B391571E370045908CC19259D71C3117 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		B5F3F9688EDD7D25E21E013C2C2A6F91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		C3F1AA0A73F1A9BFB0A25C110192AE22 /* MRExtendClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DB649AAF25282C54E040465DA48C249E /* MRExtendClass.m */; };
-		D36C6F1DD3B8205197C283ECD7774CA4 /* Pods-MRLogicInjection_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 578F140E66FE058D22446ACD76AC3322 /* Pods-MRLogicInjection_Example-dummy.m */; };
+		0230790B0A82221C43D649FDCD8E201C /* NSObject+MRInjectionLogicKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 675EC507AD453C698D6314FB36FFBCBD /* NSObject+MRInjectionLogicKey.m */; };
+		074727B9387C6A27B3440BDBFC93862B /* Pods-MRLogicInjection_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64191DDA12F14812F3B236AB8277D5C8 /* Pods-MRLogicInjection_Tests-dummy.m */; };
+		2BA49A206A4B9ED521AF8B7B44166C31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5021BB71AA6C1F4759D99A56A3B94175 /* MRLogicInjection-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F97BB0FB7B3D9E63F5B2E037143EEB9 /* MRLogicInjection-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5942D11CF3EE4408D16DB141F1F29BE5 /* MRLogicInjection.h in Headers */ = {isa = PBXBuildFile; fileRef = F00D38E52D4F24A5795C4A5013C87CDE /* MRLogicInjection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60B00652381BD2417E749E0ECF0BA68A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		69B4A843C04D0B4354D9BA430C5061E9 /* MRLogicInjection-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F18180B9172CC79566065D54B149E45 /* MRLogicInjection-dummy.m */; };
+		77FE4453A8B1A1055072E1D6EEAF9E5C /* MRCheckSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C9C0EC304961D30D967E48130F01E8 /* MRCheckSuper.m */; };
+		80DA8FDD76F4F4D2DA88608A1DF89469 /* MRExtendClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FA8C5A4C2808165E92F36FCF430756E /* MRExtendClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91FD37635BB6641E1702CD9E976D44EA /* MRExtendClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9C6266ABDE5A6600B557FDB5362916 /* MRExtendClass.m */; };
+		A0ADCCE08AF35279BF6CBF34F6E307C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B47D12D4C0CC18EBE4D94C2A8A3AE902 /* MRCheckSuper.h in Headers */ = {isa = PBXBuildFile; fileRef = B60139EAB6BDCFC5172D766B5A6D12EB /* MRCheckSuper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D041484F1D16FA7158A6E24E04167BBF /* Pods-MRLogicInjection_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F9DD58D9329F16C4408A6E197073C9 /* Pods-MRLogicInjection_Example-dummy.m */; };
+		D313C7F8A6679747CDE91A9BBF622D9A /* Pods-MRLogicInjection_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5A8E084BF7AC4E64F637C0A9B9003D2 /* Pods-MRLogicInjection_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7F621C84D916A3676B41D2C063BEA4A /* Pods-MRLogicInjection_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA58921714157520701A4EC502B325F9 /* Pods-MRLogicInjection_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9F5F8EE25DFF42B54B39C5F34027216 /* NSObject+MRInjectionLogicKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 23C70EB17E26CF34DFA07236A91C529C /* NSObject+MRInjectionLogicKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		ECC59D78812173FF98EFA276C31B2D09 /* PBXContainerItemProxy */ = {
+		01640FF8F9F98A7B762832B39D6EC7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A5DBB0A97442A629E7D6A7A6C0DC79F7;
+			remoteGlobalIDString = EF323D19EE4173023AEBFE3A3B3B8C89;
+			remoteInfo = "Pods-MRLogicInjection_Example";
+		};
+		956E8AD7E5AE14EF2A12376BBB8D6D3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F94A055DE6CBF47042E8A07B26891C2;
 			remoteInfo = MRLogicInjection;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0657C792806DF263C015F65D722A3ABB /* Pods-MRLogicInjection_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MRLogicInjection_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		07B6EF01C48A0BED8C77F2B93B8A6278 /* Pods-MRLogicInjection_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MRLogicInjection_Example.modulemap"; sourceTree = "<group>"; };
-		0F0F3235539C50E5F692A5AB52D772C9 /* MRLogicInjection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MRLogicInjection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FFD22562B324503737C41840AB95B2E /* Pods-MRLogicInjection_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MRLogicInjection_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		117C10E68D9C1503E0A95EE29F2C35DC /* Pods_MRLogicInjection_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRLogicInjection_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A7992B1F9C23D24C6B78C36F9B107BA /* MRLogicInjection-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRLogicInjection-umbrella.h"; sourceTree = "<group>"; };
-		1F291F31C7A1FCFFE24A920D3E748EFC /* MRLogicInjection.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MRLogicInjection.xcconfig; sourceTree = "<group>"; };
-		42AA3B0650595301F6393B017A439350 /* Pods-MRLogicInjection_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MRLogicInjection_Tests-umbrella.h"; sourceTree = "<group>"; };
-		4BA4C5161036099E7C5A7A4D79B1F389 /* Pods-MRLogicInjection_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MRLogicInjection_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		578F140E66FE058D22446ACD76AC3322 /* Pods-MRLogicInjection_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MRLogicInjection_Example-dummy.m"; sourceTree = "<group>"; };
-		5941DE1EAC7557F01B8B74A24825B97E /* MRExtendClass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MRExtendClass.h; sourceTree = "<group>"; };
-		74A1201E426EB087C0DC4ACCD8552529 /* Pods-MRLogicInjection_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRLogicInjection_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		7604BEC7441FEF7EDEBB8F8F1A5B3FCF /* MRLogicInjection.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MRLogicInjection.modulemap; sourceTree = "<group>"; };
-		77261673C56326039689F92B49B13782 /* Pods-MRLogicInjection_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRLogicInjection_Example-resources.sh"; sourceTree = "<group>"; };
-		7A3360B64D80FC7B3AF13651632BB861 /* Pods-MRLogicInjection_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRLogicInjection_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		7ED8F6C24D924EAFE5D8B439856C02DD /* Pods-MRLogicInjection_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MRLogicInjection_Tests-dummy.m"; sourceTree = "<group>"; };
-		810803D046118F93D87EBE63CD56127F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86050F373C5A6159997A045E88FEA719 /* Pods-MRLogicInjection_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MRLogicInjection_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		873B7067915C827E4B95A1828C47B6ED /* Pods-MRLogicInjection_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRLogicInjection_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95E78C7342362D588E98F1FCB0332247 /* Pods-MRLogicInjection_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MRLogicInjection_Tests.modulemap"; sourceTree = "<group>"; };
-		9795BA854B2644EE706A10987FB54E93 /* Pods-MRLogicInjection_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRLogicInjection_Tests-resources.sh"; sourceTree = "<group>"; };
-		A1DACC5F27DD17A158F27BD7043A70AF /* MRLogicInjection-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRLogicInjection-prefix.pch"; sourceTree = "<group>"; };
-		B557EAE4E7388FC1E5A9D68CAFDFCA91 /* Pods-MRLogicInjection_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MRLogicInjection_Example-umbrella.h"; sourceTree = "<group>"; };
-		C2318E4333266850C8A4A38719621B88 /* Pods_MRLogicInjection_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRLogicInjection_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8AF3CE646CB6D13E5465EDB68A1EB21 /* MRLogicInjection-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MRLogicInjection-dummy.m"; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DB649AAF25282C54E040465DA48C249E /* MRExtendClass.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MRExtendClass.m; sourceTree = "<group>"; };
-		DCABD2623487DA2FD3851A6E33FEBF9F /* Pods-MRLogicInjection_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRLogicInjection_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E3113FB5EAF415CBAE99458C74155AA4 /* MRLogicInjection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MRLogicInjection.h; sourceTree = "<group>"; };
-		EAD97AAB63C482CBF7E2667C4DA1B4B9 /* Pods-MRLogicInjection_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRLogicInjection_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EB2753B35068F1AA0BE7374A996D5C9B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6D5956F80AA6DA2F81443D40D27BC28 /* Pods-MRLogicInjection_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRLogicInjection_Example-frameworks.sh"; sourceTree = "<group>"; };
-		FBD52A3E9ED44584804060FC94133E50 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AE9C2018A4B5CDF8D3C912B5F974571 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0F0F3235539C50E5F692A5AB52D772C9 /* MRLogicInjection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MRLogicInjection.framework; path = MRLogicInjection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		101DBA00A8891064997034290C7C0628 /* Pods-MRLogicInjection_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MRLogicInjection_Tests.modulemap"; sourceTree = "<group>"; };
+		117C10E68D9C1503E0A95EE29F2C35DC /* Pods_MRLogicInjection_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MRLogicInjection_Example.framework; path = "Pods-MRLogicInjection_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1461B50330AE2EB7AF91B95D30FB6F97 /* Pods-MRLogicInjection_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRLogicInjection_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		23C70EB17E26CF34DFA07236A91C529C /* NSObject+MRInjectionLogicKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MRInjectionLogicKey.h"; path = "MRLogicInjection/Classes/NSObject+MRInjectionLogicKey.h"; sourceTree = "<group>"; };
+		248CF5B0C14E355C003CF93C7AEF6548 /* Pods-MRLogicInjection_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRLogicInjection_Example-resources.sh"; sourceTree = "<group>"; };
+		2A84424C42CA0650E1298617F891632F /* Pods-MRLogicInjection_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MRLogicInjection_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		2F97BB0FB7B3D9E63F5B2E037143EEB9 /* MRLogicInjection-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRLogicInjection-umbrella.h"; sourceTree = "<group>"; };
+		3372BC35BBCE05A853C2867B1A7103F6 /* MRLogicInjection-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRLogicInjection-prefix.pch"; sourceTree = "<group>"; };
+		3688E4F6924703F171FAA8ADBA703A85 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA8C5A4C2808165E92F36FCF430756E /* MRExtendClass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRExtendClass.h; path = MRLogicInjection/Classes/MRExtendClass.h; sourceTree = "<group>"; };
+		5871334F5F81701BAA20A0391F299C1F /* Pods-MRLogicInjection_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRLogicInjection_Tests-resources.sh"; sourceTree = "<group>"; };
+		59A4356B9E3E0BE2EEED5BA3CDFEFA64 /* Pods-MRLogicInjection_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRLogicInjection_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		5F18180B9172CC79566065D54B149E45 /* MRLogicInjection-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MRLogicInjection-dummy.m"; sourceTree = "<group>"; };
+		64191DDA12F14812F3B236AB8277D5C8 /* Pods-MRLogicInjection_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MRLogicInjection_Tests-dummy.m"; sourceTree = "<group>"; };
+		64867A01AFC3E8D5ECF6012664CC1A8E /* Pods-MRLogicInjection_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRLogicInjection_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		675EC507AD453C698D6314FB36FFBCBD /* NSObject+MRInjectionLogicKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MRInjectionLogicKey.m"; path = "MRLogicInjection/Classes/NSObject+MRInjectionLogicKey.m"; sourceTree = "<group>"; };
+		69B353A35DFC08E6BD7715768C408FDD /* MRLogicInjection.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MRLogicInjection.modulemap; sourceTree = "<group>"; };
+		6CE4D9F970D2E4A4DB2B3E53031C89D9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7261A7E4BB898E9CC05884B2F04E0AC8 /* Pods-MRLogicInjection_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRLogicInjection_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8663F7DCC51314FE924DB92B476D53FE /* MRLogicInjection.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MRLogicInjection.xcconfig; sourceTree = "<group>"; };
+		8B2D0BE6F95A7D0D9CDEBACD70109899 /* Pods-MRLogicInjection_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRLogicInjection_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8CF9FA78311E1A54412F06ABBEA47D8B /* Pods-MRLogicInjection_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRLogicInjection_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		91DD94B5CF37E1087A54443B8337AF07 /* Pods-MRLogicInjection_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MRLogicInjection_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94D24A4917EF0623550BE40D93BBF6DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A4F9DD58D9329F16C4408A6E197073C9 /* Pods-MRLogicInjection_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MRLogicInjection_Example-dummy.m"; sourceTree = "<group>"; };
+		B60139EAB6BDCFC5172D766B5A6D12EB /* MRCheckSuper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRCheckSuper.h; path = MRLogicInjection/Classes/MRCheckSuper.h; sourceTree = "<group>"; };
+		BA58921714157520701A4EC502B325F9 /* Pods-MRLogicInjection_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MRLogicInjection_Example-umbrella.h"; sourceTree = "<group>"; };
+		C2318E4333266850C8A4A38719621B88 /* Pods_MRLogicInjection_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MRLogicInjection_Tests.framework; path = "Pods-MRLogicInjection_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C575B3A7665489F8E4AA104D35B2C739 /* Pods-MRLogicInjection_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MRLogicInjection_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C9C9C0EC304961D30D967E48130F01E8 /* MRCheckSuper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRCheckSuper.m; path = MRLogicInjection/Classes/MRCheckSuper.m; sourceTree = "<group>"; };
+		CBCDC9545B1F91B13302723E290E90CB /* MRLogicInjection.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = MRLogicInjection.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D5A8E084BF7AC4E64F637C0A9B9003D2 /* Pods-MRLogicInjection_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MRLogicInjection_Tests-umbrella.h"; sourceTree = "<group>"; };
+		DFEACA3D08C108E7C8409405DD8344EE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E39265F37F7DEE04C77241933D6F9D91 /* Pods-MRLogicInjection_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MRLogicInjection_Example.modulemap"; sourceTree = "<group>"; };
+		E8A7A714F0D193AA01EC5F6913DBF0D8 /* Pods-MRLogicInjection_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MRLogicInjection_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F00D38E52D4F24A5795C4A5013C87CDE /* MRLogicInjection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRLogicInjection.h; path = MRLogicInjection/Classes/MRLogicInjection.h; sourceTree = "<group>"; };
+		FE9C6266ABDE5A6600B557FDB5362916 /* MRExtendClass.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRExtendClass.m; path = MRLogicInjection/Classes/MRExtendClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7E0163BD42884153A826E7BBDA8832F2 /* Frameworks */ = {
+		31F492BEA0F6E9ED21D39CD1716D7A28 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A0005A0CB2CD12B9A627E5478A4D7A3 /* Foundation.framework in Frameworks */,
+				2BA49A206A4B9ED521AF8B7B44166C31 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F754087683E43B0F9BA2585E26E0A42 /* Frameworks */ = {
+		D60BFD608FB5C41AC3F40F9C9C58AE28 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5F3F9688EDD7D25E21E013C2C2A6F91 /* Foundation.framework in Frameworks */,
+				A0ADCCE08AF35279BF6CBF34F6E307C9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD0D5A9077029957F2BA826B81B996EF /* Frameworks */ = {
+		EADE2F2BB9F996D5043EE3643D3757C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B391571E370045908CC19259D71C3117 /* Foundation.framework in Frameworks */,
+				60B00652381BD2417E749E0ECF0BA68A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A5D2F158795EF8972656214B6968C51 /* Development Pods */ = {
+		28EA88DC9ABD88643DEC91A0AEDA12B9 /* MRLogicInjection */ = {
 			isa = PBXGroup;
 			children = (
-				99D9CB9A3936E72E1DCECEF6925ADBA5 /* MRLogicInjection */,
+				B60139EAB6BDCFC5172D766B5A6D12EB /* MRCheckSuper.h */,
+				C9C9C0EC304961D30D967E48130F01E8 /* MRCheckSuper.m */,
+				3FA8C5A4C2808165E92F36FCF430756E /* MRExtendClass.h */,
+				FE9C6266ABDE5A6600B557FDB5362916 /* MRExtendClass.m */,
+				F00D38E52D4F24A5795C4A5013C87CDE /* MRLogicInjection.h */,
+				23C70EB17E26CF34DFA07236A91C529C /* NSObject+MRInjectionLogicKey.h */,
+				675EC507AD453C698D6314FB36FFBCBD /* NSObject+MRInjectionLogicKey.m */,
+				32699DC157B338CE71FFDDDEEF59920C /* Pod */,
+				DE574CA2BFC2444A97A349B8A9A3F1CC /* Support Files */,
 			);
-			name = "Development Pods";
+			name = MRLogicInjection;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		2B549E799835C568A86DF78C755B62D0 /* Support Files */ = {
+		32699DC157B338CE71FFDDDEEF59920C /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				FBD52A3E9ED44584804060FC94133E50 /* Info.plist */,
-				7604BEC7441FEF7EDEBB8F8F1A5B3FCF /* MRLogicInjection.modulemap */,
-				1F291F31C7A1FCFFE24A920D3E748EFC /* MRLogicInjection.xcconfig */,
-				C8AF3CE646CB6D13E5465EDB68A1EB21 /* MRLogicInjection-dummy.m */,
-				A1DACC5F27DD17A158F27BD7043A70AF /* MRLogicInjection-prefix.pch */,
-				1A7992B1F9C23D24C6B78C36F9B107BA /* MRLogicInjection-umbrella.h */,
+				0AE9C2018A4B5CDF8D3C912B5F974571 /* LICENSE */,
+				CBCDC9545B1F91B13302723E290E90CB /* MRLogicInjection.podspec */,
+				94D24A4917EF0623550BE40D93BBF6DE /* README.md */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MRLogicInjection";
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		39324689B3C05768270B953B9CADA5D8 /* Pods-MRLogicInjection_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3688E4F6924703F171FAA8ADBA703A85 /* Info.plist */,
+				E39265F37F7DEE04C77241933D6F9D91 /* Pods-MRLogicInjection_Example.modulemap */,
+				91DD94B5CF37E1087A54443B8337AF07 /* Pods-MRLogicInjection_Example-acknowledgements.markdown */,
+				2A84424C42CA0650E1298617F891632F /* Pods-MRLogicInjection_Example-acknowledgements.plist */,
+				A4F9DD58D9329F16C4408A6E197073C9 /* Pods-MRLogicInjection_Example-dummy.m */,
+				7261A7E4BB898E9CC05884B2F04E0AC8 /* Pods-MRLogicInjection_Example-frameworks.sh */,
+				248CF5B0C14E355C003CF93C7AEF6548 /* Pods-MRLogicInjection_Example-resources.sh */,
+				BA58921714157520701A4EC502B325F9 /* Pods-MRLogicInjection_Example-umbrella.h */,
+				59A4356B9E3E0BE2EEED5BA3CDFEFA64 /* Pods-MRLogicInjection_Example.debug.xcconfig */,
+				8B2D0BE6F95A7D0D9CDEBACD70109899 /* Pods-MRLogicInjection_Example.release.xcconfig */,
+			);
+			name = "Pods-MRLogicInjection_Example";
+			path = "Target Support Files/Pods-MRLogicInjection_Example";
 			sourceTree = "<group>";
 		};
 		3A08729C3B339ED6C81D9CDE0CDD3C06 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4536AA44D2911AD66242411883873DAB /* Pods-MRLogicInjection_Example */,
-				B3D672864F39A6091F22270154B3148E /* Pods-MRLogicInjection_Tests */,
+				39324689B3C05768270B953B9CADA5D8 /* Pods-MRLogicInjection_Example */,
+				C0FB92264AAB96AE24C0296152A38204 /* Pods-MRLogicInjection_Tests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -137,154 +178,114 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		73F1B87274E9AFFA2A8E3C045A50334B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+				28EA88DC9ABD88643DEC91A0AEDA12B9 /* MRLogicInjection */,
 			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		4536AA44D2911AD66242411883873DAB /* Pods-MRLogicInjection_Example */ = {
-			isa = PBXGroup;
-			children = (
-				810803D046118F93D87EBE63CD56127F /* Info.plist */,
-				07B6EF01C48A0BED8C77F2B93B8A6278 /* Pods-MRLogicInjection_Example.modulemap */,
-				4BA4C5161036099E7C5A7A4D79B1F389 /* Pods-MRLogicInjection_Example-acknowledgements.markdown */,
-				0657C792806DF263C015F65D722A3ABB /* Pods-MRLogicInjection_Example-acknowledgements.plist */,
-				578F140E66FE058D22446ACD76AC3322 /* Pods-MRLogicInjection_Example-dummy.m */,
-				F6D5956F80AA6DA2F81443D40D27BC28 /* Pods-MRLogicInjection_Example-frameworks.sh */,
-				77261673C56326039689F92B49B13782 /* Pods-MRLogicInjection_Example-resources.sh */,
-				B557EAE4E7388FC1E5A9D68CAFDFCA91 /* Pods-MRLogicInjection_Example-umbrella.h */,
-				EAD97AAB63C482CBF7E2667C4DA1B4B9 /* Pods-MRLogicInjection_Example.debug.xcconfig */,
-				DCABD2623487DA2FD3851A6E33FEBF9F /* Pods-MRLogicInjection_Example.release.xcconfig */,
-			);
-			name = "Pods-MRLogicInjection_Example";
-			path = "Target Support Files/Pods-MRLogicInjection_Example";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				1A5D2F158795EF8972656214B6968C51 /* Development Pods */,
+				73F1B87274E9AFFA2A8E3C045A50334B /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				3A3BBCA8C0528FD8CA5A66949AB8ABB4 /* Products */,
 				3A08729C3B339ED6C81D9CDE0CDD3C06 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		99D9CB9A3936E72E1DCECEF6925ADBA5 /* MRLogicInjection */ = {
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E9204E7D692733EF3410B60912E54DD2 /* MRLogicInjection */,
-				2B549E799835C568A86DF78C755B62D0 /* Support Files */,
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
-			name = MRLogicInjection;
-			path = ../..;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B3D672864F39A6091F22270154B3148E /* Pods-MRLogicInjection_Tests */ = {
+		C0FB92264AAB96AE24C0296152A38204 /* Pods-MRLogicInjection_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				EB2753B35068F1AA0BE7374A996D5C9B /* Info.plist */,
-				95E78C7342362D588E98F1FCB0332247 /* Pods-MRLogicInjection_Tests.modulemap */,
-				0FFD22562B324503737C41840AB95B2E /* Pods-MRLogicInjection_Tests-acknowledgements.markdown */,
-				86050F373C5A6159997A045E88FEA719 /* Pods-MRLogicInjection_Tests-acknowledgements.plist */,
-				7ED8F6C24D924EAFE5D8B439856C02DD /* Pods-MRLogicInjection_Tests-dummy.m */,
-				873B7067915C827E4B95A1828C47B6ED /* Pods-MRLogicInjection_Tests-frameworks.sh */,
-				9795BA854B2644EE706A10987FB54E93 /* Pods-MRLogicInjection_Tests-resources.sh */,
-				42AA3B0650595301F6393B017A439350 /* Pods-MRLogicInjection_Tests-umbrella.h */,
-				7A3360B64D80FC7B3AF13651632BB861 /* Pods-MRLogicInjection_Tests.debug.xcconfig */,
-				74A1201E426EB087C0DC4ACCD8552529 /* Pods-MRLogicInjection_Tests.release.xcconfig */,
+				DFEACA3D08C108E7C8409405DD8344EE /* Info.plist */,
+				101DBA00A8891064997034290C7C0628 /* Pods-MRLogicInjection_Tests.modulemap */,
+				C575B3A7665489F8E4AA104D35B2C739 /* Pods-MRLogicInjection_Tests-acknowledgements.markdown */,
+				E8A7A714F0D193AA01EC5F6913DBF0D8 /* Pods-MRLogicInjection_Tests-acknowledgements.plist */,
+				64191DDA12F14812F3B236AB8277D5C8 /* Pods-MRLogicInjection_Tests-dummy.m */,
+				8CF9FA78311E1A54412F06ABBEA47D8B /* Pods-MRLogicInjection_Tests-frameworks.sh */,
+				5871334F5F81701BAA20A0391F299C1F /* Pods-MRLogicInjection_Tests-resources.sh */,
+				D5A8E084BF7AC4E64F637C0A9B9003D2 /* Pods-MRLogicInjection_Tests-umbrella.h */,
+				64867A01AFC3E8D5ECF6012664CC1A8E /* Pods-MRLogicInjection_Tests.debug.xcconfig */,
+				1461B50330AE2EB7AF91B95D30FB6F97 /* Pods-MRLogicInjection_Tests.release.xcconfig */,
 			);
 			name = "Pods-MRLogicInjection_Tests";
 			path = "Target Support Files/Pods-MRLogicInjection_Tests";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		D92888FCF80588500F2D90B1251263B6 /* Classes */ = {
+		DE574CA2BFC2444A97A349B8A9A3F1CC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5941DE1EAC7557F01B8B74A24825B97E /* MRExtendClass.h */,
-				DB649AAF25282C54E040465DA48C249E /* MRExtendClass.m */,
-				E3113FB5EAF415CBAE99458C74155AA4 /* MRLogicInjection.h */,
+				6CE4D9F970D2E4A4DB2B3E53031C89D9 /* Info.plist */,
+				69B353A35DFC08E6BD7715768C408FDD /* MRLogicInjection.modulemap */,
+				8663F7DCC51314FE924DB92B476D53FE /* MRLogicInjection.xcconfig */,
+				5F18180B9172CC79566065D54B149E45 /* MRLogicInjection-dummy.m */,
+				3372BC35BBCE05A853C2867B1A7103F6 /* MRLogicInjection-prefix.pch */,
+				2F97BB0FB7B3D9E63F5B2E037143EEB9 /* MRLogicInjection-umbrella.h */,
 			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		E9204E7D692733EF3410B60912E54DD2 /* MRLogicInjection */ = {
-			isa = PBXGroup;
-			children = (
-				D92888FCF80588500F2D90B1251263B6 /* Classes */,
-			);
-			path = MRLogicInjection;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MRLogicInjection";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1A59020852B41B0A0313904C063ECD70 /* Headers */ = {
+		2044AF276E08176250118061B7523457 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29B1889D2EDD589BA02E7BCA4B7D7FEF /* Pods-MRLogicInjection_Tests-umbrella.h in Headers */,
+				D313C7F8A6679747CDE91A9BBF622D9A /* Pods-MRLogicInjection_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4CCC70581320BD98242501FF1A43B4E /* Headers */ = {
+		4C573E3B3897FB1E3C62DD79A18E0F64 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF0876D67E3C8F9505C2ECD2D1AB4194 /* Pods-MRLogicInjection_Example-umbrella.h in Headers */,
+				B47D12D4C0CC18EBE4D94C2A8A3AE902 /* MRCheckSuper.h in Headers */,
+				80DA8FDD76F4F4D2DA88608A1DF89469 /* MRExtendClass.h in Headers */,
+				5021BB71AA6C1F4759D99A56A3B94175 /* MRLogicInjection-umbrella.h in Headers */,
+				5942D11CF3EE4408D16DB141F1F29BE5 /* MRLogicInjection.h in Headers */,
+				E9F5F8EE25DFF42B54B39C5F34027216 /* NSObject+MRInjectionLogicKey.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3B8BC0AE6F73C3519EA5B0749F784DA /* Headers */ = {
+		56AA6E4D406158E139082A0F0102CD1F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B8DEE11E1DEB82A1A24DD81F14DE110 /* MRExtendClass.h in Headers */,
-				76727ACEAB650FEBDF16A346EBE2977B /* MRLogicInjection-umbrella.h in Headers */,
-				3AADEEF18F6504142D1D1638B5AB8FE6 /* MRLogicInjection.h in Headers */,
+				D7F621C84D916A3676B41D2C063BEA4A /* Pods-MRLogicInjection_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		94B7C93FCFC10460C3F01EEFAE3E64BC /* Pods-MRLogicInjection_Example */ = {
+		9F94A055DE6CBF47042E8A07B26891C2 /* MRLogicInjection */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E491DEC3E3BA3408838CA4DAC39AA43 /* Build configuration list for PBXNativeTarget "Pods-MRLogicInjection_Example" */;
+			buildConfigurationList = 3D2E67E4A70397CA6C7047FA8127FEED /* Build configuration list for PBXNativeTarget "MRLogicInjection" */;
 			buildPhases = (
-				58230DC71B8E6623CABB56C8860FAA22 /* Sources */,
-				7F754087683E43B0F9BA2585E26E0A42 /* Frameworks */,
-				A4CCC70581320BD98242501FF1A43B4E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CA689421861D2FF706BCE5996BC33207 /* PBXTargetDependency */,
-			);
-			name = "Pods-MRLogicInjection_Example";
-			productName = "Pods-MRLogicInjection_Example";
-			productReference = 117C10E68D9C1503E0A95EE29F2C35DC /* Pods_MRLogicInjection_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A5DBB0A97442A629E7D6A7A6C0DC79F7 /* MRLogicInjection */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9C53A36E7B07CBFEF9569EC21337B735 /* Build configuration list for PBXNativeTarget "MRLogicInjection" */;
-			buildPhases = (
-				DBF28A897A65730DF51FE9C12E9DF4C5 /* Sources */,
-				7E0163BD42884153A826E7BBDA8832F2 /* Frameworks */,
-				C3B8BC0AE6F73C3519EA5B0749F784DA /* Headers */,
+				7FD82195417AACC4B7692E9D2CD73051 /* Sources */,
+				D60BFD608FB5C41AC3F40F9C9C58AE28 /* Frameworks */,
+				4C573E3B3897FB1E3C62DD79A18E0F64 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -295,21 +296,40 @@
 			productReference = 0F0F3235539C50E5F692A5AB52D772C9 /* MRLogicInjection.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C997931FF260604D086C8EFCC66B7B3E /* Pods-MRLogicInjection_Tests */ = {
+		A24DFC34FF7A58CABAE37663387AB54C /* Pods-MRLogicInjection_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F59C5C666BD50B0237AA30BF44EA4B1 /* Build configuration list for PBXNativeTarget "Pods-MRLogicInjection_Tests" */;
+			buildConfigurationList = D812BF2232F0C4481E8A70D0991405B6 /* Build configuration list for PBXNativeTarget "Pods-MRLogicInjection_Tests" */;
 			buildPhases = (
-				DE18334671E466CFD8508F8A731766EE /* Sources */,
-				FD0D5A9077029957F2BA826B81B996EF /* Frameworks */,
-				1A59020852B41B0A0313904C063ECD70 /* Headers */,
+				306A0F548128BE3EE5A3393950C4DADF /* Sources */,
+				31F492BEA0F6E9ED21D39CD1716D7A28 /* Frameworks */,
+				2044AF276E08176250118061B7523457 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B5BE8C16473563322AD7CCD6FF002E83 /* PBXTargetDependency */,
 			);
 			name = "Pods-MRLogicInjection_Tests";
 			productName = "Pods-MRLogicInjection_Tests";
 			productReference = C2318E4333266850C8A4A38719621B88 /* Pods_MRLogicInjection_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF323D19EE4173023AEBFE3A3B3B8C89 /* Pods-MRLogicInjection_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFD60D5086DB347F0955E748162A5DBA /* Build configuration list for PBXNativeTarget "Pods-MRLogicInjection_Example" */;
+			buildPhases = (
+				33ED9644FC1F45B87271D3177F6A9260 /* Sources */,
+				EADE2F2BB9F996D5043EE3643D3757C5 /* Frameworks */,
+				56AA6E4D406158E139082A0F0102CD1F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C4955E5D1BC14936F91F56F79DD7E7B /* PBXTargetDependency */,
+			);
+			name = "Pods-MRLogicInjection_Example";
+			productName = "Pods-MRLogicInjection_Example";
+			productReference = 117C10E68D9C1503E0A95EE29F2C35DC /* Pods_MRLogicInjection_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -318,8 +338,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -333,209 +353,118 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A5DBB0A97442A629E7D6A7A6C0DC79F7 /* MRLogicInjection */,
-				94B7C93FCFC10460C3F01EEFAE3E64BC /* Pods-MRLogicInjection_Example */,
-				C997931FF260604D086C8EFCC66B7B3E /* Pods-MRLogicInjection_Tests */,
+				9F94A055DE6CBF47042E8A07B26891C2 /* MRLogicInjection */,
+				EF323D19EE4173023AEBFE3A3B3B8C89 /* Pods-MRLogicInjection_Example */,
+				A24DFC34FF7A58CABAE37663387AB54C /* Pods-MRLogicInjection_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		58230DC71B8E6623CABB56C8860FAA22 /* Sources */ = {
+		306A0F548128BE3EE5A3393950C4DADF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D36C6F1DD3B8205197C283ECD7774CA4 /* Pods-MRLogicInjection_Example-dummy.m in Sources */,
+				074727B9387C6A27B3440BDBFC93862B /* Pods-MRLogicInjection_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DBF28A897A65730DF51FE9C12E9DF4C5 /* Sources */ = {
+		33ED9644FC1F45B87271D3177F6A9260 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3F1AA0A73F1A9BFB0A25C110192AE22 /* MRExtendClass.m in Sources */,
-				B2A6E83403F72B3FB9076C2125CCE71A /* MRLogicInjection-dummy.m in Sources */,
+				D041484F1D16FA7158A6E24E04167BBF /* Pods-MRLogicInjection_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE18334671E466CFD8508F8A731766EE /* Sources */ = {
+		7FD82195417AACC4B7692E9D2CD73051 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28D55930EE09606280DC89569812BCEF /* Pods-MRLogicInjection_Tests-dummy.m in Sources */,
+				77FE4453A8B1A1055072E1D6EEAF9E5C /* MRCheckSuper.m in Sources */,
+				91FD37635BB6641E1702CD9E976D44EA /* MRExtendClass.m in Sources */,
+				69B4A843C04D0B4354D9BA430C5061E9 /* MRLogicInjection-dummy.m in Sources */,
+				0230790B0A82221C43D649FDCD8E201C /* NSObject+MRInjectionLogicKey.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CA689421861D2FF706BCE5996BC33207 /* PBXTargetDependency */ = {
+		7C4955E5D1BC14936F91F56F79DD7E7B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MRLogicInjection;
-			target = A5DBB0A97442A629E7D6A7A6C0DC79F7 /* MRLogicInjection */;
-			targetProxy = ECC59D78812173FF98EFA276C31B2D09 /* PBXContainerItemProxy */;
+			target = 9F94A055DE6CBF47042E8A07B26891C2 /* MRLogicInjection */;
+			targetProxy = 956E8AD7E5AE14EF2A12376BBB8D6D3C /* PBXContainerItemProxy */;
+		};
+		B5BE8C16473563322AD7CCD6FF002E83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MRLogicInjection_Example";
+			target = EF323D19EE4173023AEBFE3A3B3B8C89 /* Pods-MRLogicInjection_Example */;
+			targetProxy = 01640FF8F9F98A7B762832B39D6EC7CC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+		05C3427DC5297CB807F03F01B3DAD6FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B2D0BE6F95A7D0D9CDEBACD70109899 /* Pods-MRLogicInjection_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		36BEDA94BFD40FAB07678D1A1E91F479 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F291F31C7A1FCFFE24A920D3E748EFC /* MRLogicInjection.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MRLogicInjection/MRLogicInjection-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MRLogicInjection/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MRLogicInjection/MRLogicInjection.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MRLogicInjection;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		378E8D69F9C077BC7B0A98D0F998A13F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A3360B64D80FC7B3AF13651632BB861 /* Pods-MRLogicInjection_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MRLogicInjection_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MRLogicInjection_Tests/Pods-MRLogicInjection_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MRLogicInjection_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7F8343FD70E84B0B87F72317A8B3DC40 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74A1201E426EB087C0DC4ACCD8552529 /* Pods-MRLogicInjection_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MRLogicInjection_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MRLogicInjection_Tests/Pods-MRLogicInjection_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MRLogicInjection_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9665A35E253F5FADCE1867DCD9688B6E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAD97AAB63C482CBF7E2667C4DA1B4B9 /* Pods-MRLogicInjection_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-MRLogicInjection_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MRLogicInjection_Example/Pods-MRLogicInjection_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MRLogicInjection_Example;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		35B65A59C094131A9D4573AF98EC627B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59A4356B9E3E0BE2EEED5BA3CDFEFA64 /* Pods-MRLogicInjection_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MRLogicInjection_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MRLogicInjection_Example/Pods-MRLogicInjection_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -544,27 +473,62 @@
 			};
 			name = Debug;
 		};
-		C16CAA838539D8FDA1A41E9F9918E4C6 /* Debug */ = {
+		431EE3981874C2BB86DBF8441F66D9BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F291F31C7A1FCFFE24A920D3E748EFC /* MRLogicInjection.xcconfig */;
+			baseConfigurationReference = 8663F7DCC51314FE924DB92B476D53FE /* MRLogicInjection.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MRLogicInjection/MRLogicInjection-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MRLogicInjection/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MRLogicInjection/MRLogicInjection.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_MODULE_NAME = MRLogicInjection;
 				PRODUCT_NAME = MRLogicInjection;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5E6952BB4560FC1F926CFD515403826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64867A01AFC3E8D5ECF6012664CC1A8E /* Pods-MRLogicInjection_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MRLogicInjection_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MRLogicInjection_Tests/Pods-MRLogicInjection_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -573,80 +537,190 @@
 			};
 			name = Debug;
 		};
-		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+		B6A32B97E3556BB82E8B009331C4D795 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1461B50330AE2EB7AF91B95D30FB6F97 /* Pods-MRLogicInjection_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MRLogicInjection_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MRLogicInjection_Tests/Pods-MRLogicInjection_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7BE62186E17127FF3B5B27A193214BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		FE51EBE24AABABB1119CEB693ADACED6 /* Release */ = {
+		D077E5AF30E3A09910AC48CA760A1280 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCABD2623487DA2FD3851A6E33FEBF9F /* Pods-MRLogicInjection_Example.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F04E37345DDFCB13ACEC820177138EE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8663F7DCC51314FE924DB92B476D53FE /* MRLogicInjection.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MRLogicInjection_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/MRLogicInjection/MRLogicInjection-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MRLogicInjection/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MRLogicInjection_Example/Pods-MRLogicInjection_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MRLogicInjection_Example;
+				MODULEMAP_FILE = "Target Support Files/MRLogicInjection/MRLogicInjection.modulemap";
+				PRODUCT_MODULE_NAME = MRLogicInjection;
+				PRODUCT_NAME = MRLogicInjection;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -654,35 +728,35 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
-				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+				C7BE62186E17127FF3B5B27A193214BD /* Debug */,
+				D077E5AF30E3A09910AC48CA760A1280 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E491DEC3E3BA3408838CA4DAC39AA43 /* Build configuration list for PBXNativeTarget "Pods-MRLogicInjection_Example" */ = {
+		3D2E67E4A70397CA6C7047FA8127FEED /* Build configuration list for PBXNativeTarget "MRLogicInjection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9665A35E253F5FADCE1867DCD9688B6E /* Debug */,
-				FE51EBE24AABABB1119CEB693ADACED6 /* Release */,
+				F04E37345DDFCB13ACEC820177138EE3 /* Debug */,
+				431EE3981874C2BB86DBF8441F66D9BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F59C5C666BD50B0237AA30BF44EA4B1 /* Build configuration list for PBXNativeTarget "Pods-MRLogicInjection_Tests" */ = {
+		D812BF2232F0C4481E8A70D0991405B6 /* Build configuration list for PBXNativeTarget "Pods-MRLogicInjection_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				378E8D69F9C077BC7B0A98D0F998A13F /* Debug */,
-				7F8343FD70E84B0B87F72317A8B3DC40 /* Release */,
+				A5E6952BB4560FC1F926CFD515403826 /* Debug */,
+				B6A32B97E3556BB82E8B009331C4D795 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C53A36E7B07CBFEF9569EC21337B735 /* Build configuration list for PBXNativeTarget "MRLogicInjection" */ = {
+		DFD60D5086DB347F0955E748162A5DBA /* Build configuration list for PBXNativeTarget "Pods-MRLogicInjection_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C16CAA838539D8FDA1A41E9F9918E4C6 /* Debug */,
-				36BEDA94BFD40FAB07678D1A1E91F479 /* Release */,
+				35B65A59C094131A9D4573AF98EC627B /* Debug */,
+				05C3427DC5297CB807F03F01B3DAD6FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

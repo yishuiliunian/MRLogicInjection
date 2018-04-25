@@ -8,34 +8,7 @@
 
 #import "MRExtendClass.h"
 #import <objc/runtime.h>
-
-@interface MRInjectionClassMapItem : NSObject
-@property (nonatomic, strong) NSString* key;
-@property (nonatomic, strong) Class originClass;
-@end
-
-@implementation MRInjectionClassMapItem
-@end
-
-@interface NSObject (MRInjectionLogicKey)
-@property (nonatomic, strong) NSString* mr_injection_logic_key;
-@end
-
-@implementation NSObject(MRInjectionLogicKey)
-
-static void * kMRInjectionClassMap = &kMRInjectionClassMap;
-
-- (NSString*) mr_injection_logic_key
-{
-    return objc_getAssociatedObject(self, kMRInjectionClassMap);
-}
-
-- (void) setMr_injection_logic_key:(NSString *)mr_injection_logic_key
-{
-    objc_setAssociatedObject(self, kMRInjectionClassMap, mr_injection_logic_key, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-@end
+#import "NSObject+MRInjectionLogicKey.h"
 
 NSString* const KMRExtendClassKey = @"__MR_EXTEND_";
 
@@ -54,8 +27,10 @@ Class MRExtendLogicCLass(Class baseClass, Class logicClass, NSString* key) {
         //register the class
         //
         objc_registerClassPair(cla);
+        [(id)cla setMr_injection_superclass:baseClass];
     }
     [(id)cla setMr_injection_logic_key:key];
+    [(id)cla setMr_injection_logic_class:logicClass];
     unsigned int methodCount = 0;
     Method* logicMethodList= class_copyMethodList(logicClass, &methodCount);
     for (int i = 0; i < methodCount; i++) {
@@ -69,6 +44,7 @@ Class MRExtendClass(Class baseClass, NSArray* logicClasses, NSString* key) {
     Class aimCla ;
     for (Class cla  in logicClasses) {
         aimCla = MRExtendLogicCLass(baseClass, cla, key);
+        baseClass = aimCla;
     }
     return aimCla;
 }
@@ -88,7 +64,7 @@ id  MRExtendInstanceLogicWithKey(id object,NSString* logicKey,  NSArray* logicCl
         }
         originClass = class_getSuperclass(originClass);
     }
-
+    
     Class cla = MRExtendClass([object class], logicClasses, logicKey);
     object_setClass(object, cla);
     
