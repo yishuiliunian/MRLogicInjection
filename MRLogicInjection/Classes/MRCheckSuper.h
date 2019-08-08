@@ -31,7 +31,7 @@
 #define MRPrepareSendSuper(returnType, ...) \
 struct objc_super superInfo = { \
 self, \
-MRGetInjectionSuperClass([self class],__IMP_CLASS__) \
+MRGetInjectionSuperClass(object_getClass(self),__IMP_CLASS__) \
 }; \
 returnType (*method)(struct objc_super*, SEL, ##__VA_ARGS__ ) = (void*)&objc_msgSendSuper
 
@@ -96,4 +96,4 @@ Class MRGetInjectionSuperClass(Class currentClass, Class logicClass);
 /**
  检测当前函数的父类是否实现了当前的函数，如果实现了则返回YES，如果没有实现则返回NO
  */
-#define __MRSuperImplatationCurrentCMD__(selector) MRCheckSuperResponseToSelector([self class], __IMP_CLASS__, selector)
+#define __MRSuperImplatationCurrentCMD__(selector) MRCheckSuperResponseToSelector(object_getClass(self), __IMP_CLASS__, selector)
