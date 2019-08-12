@@ -8,49 +8,7 @@
 
 #import "MRExtendClass.h"
 #import <objc/runtime.h>
-#import <pthread.h>
 #import "NSObject+MRInjectionLogicKey.h"
-
-@interface NSObject (MRInjectionSwizzled)
-- (void)MRInjection_KVO_original_removeObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath;
-- (void)MRInjection_KVO_original_removeObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath context:(void *)context;
-@end
-
-static pthread_mutex_t gMutex;
-
-#if USE_BLOCKS_BASED_LOCKING
-#define BLOCK_QUALIFIER __block
-static void WhileLocked(void (^block)(void))
-{
-    pthread_mutex_lock(&gMutex);
-    block();
-    pthread_mutex_unlock(&gMutex);
-}
-#define WhileLocked(block) WhileLocked(^block)
-#else
-#define BLOCK_QUALIFIER
-#define WhileLocked(block) do { \
-        pthread_mutex_lock(&gMutex); \
-        block \
-        pthread_mutex_unlock(&gMutex); \
-    } while(0)
-#endif
-
-static void KVOSubclassRemoveObserverForKeyPath(id self, SEL _cmd, id observer, NSString *keyPath)
-{
-    WhileLocked({
-        IMP originalIMP = class_getMethodImplementation(object_getClass(self), @selector(MRInjection_KVO_original_removeObserver:forKeyPath:));
-        ((void (*)(id, SEL, id, NSString *))originalIMP)(self, _cmd, observer, keyPath);
-    });
-}
-
-static void KVOSubclassRemoveObserverForKeyPathContext(id self, SEL _cmd, id observer, NSString *keyPath, void *context)
-{
-    WhileLocked({
-        IMP originalIMP = class_getMethodImplementation(object_getClass(self), @selector(MRInjection_KVO_original_removeObserver:forKeyPath:context:));
-        ((void (*)(id, SEL, id, NSString *, void *))originalIMP)(self, _cmd, observer, keyPath, context);
-    });
-}
 
 static void MRExtendBaseClassWithLogicClass(Class baseClass, Class logicClass) {
     unsigned int methodCount = 0;
@@ -99,42 +57,18 @@ static BOOL IsKVOSubclass(id obj) {
     return [obj class] == class_getSuperclass(object_getClass(obj));
 }
 
-static void PatchKVOSubclass(Class class, NSArray* logicClasses) {
-    Method removeObserverForKeyPath = class_getInstanceMethod(class, @selector(removeObserver:forKeyPath:));
+static void PatchKVOSubclass(Class class, NSArray* logicClasses, NSString* logicKey) {
     
     for (Class cla in logicClasses) {
         MRExtendBaseClassWithLogicClass(class, cla);
-    }
-    
-    class_addMethod(class,
-                    @selector(MRInjection_KVO_original_removeObserver:forKeyPath:),
-                    method_getImplementation(removeObserverForKeyPath),
-                    method_getTypeEncoding(removeObserverForKeyPath));
-    
-    class_replaceMethod(class,
-                        @selector(removeObserver:forKeyPath:),
-                        (IMP)KVOSubclassRemoveObserverForKeyPath,
-                        method_getTypeEncoding(removeObserverForKeyPath));
-    
-    
-    
-    // The context variant is only available on 10.7/iOS5+, so only perform that override if the method actually exists.
-    Method removeObserverForKeyPathContext = class_getInstanceMethod(class, @selector(removeObserver:forKeyPath:context:));
-    if(removeObserverForKeyPathContext)
-    {
-        class_addMethod(class,
-                        @selector(MRInjection_KVO_original_removeObserver:forKeyPath:context:),
-                        method_getImplementation(removeObserverForKeyPathContext),
-                        method_getTypeEncoding(removeObserverForKeyPathContext));
-        class_replaceMethod(class,
-                            @selector(removeObserver:forKeyPath:context:),
-                            (IMP)KVOSubclassRemoveObserverForKeyPathContext,
-                            method_getTypeEncoding(removeObserverForKeyPathContext));
         
+        [(id)class setMr_injection_superclass:class_getSuperclass(class)];
+        [(id)class setMr_injection_logic_key:logicKey];
+        [(id)class setMr_injection_logic_class:cla];
     }
 }
 
-id  MRExtendInstanceLogicWithKey(id object,NSString* logicKey,  NSArray* logicClasses) {
+id  MRExtendInstanceLogicWithKey(id object, NSString* logicKey,  NSArray* logicClasses) {
     if (!object) {
         return nil;
     }
@@ -152,7 +86,7 @@ id  MRExtendInstanceLogicWithKey(id object,NSString* logicKey,  NSArray* logicCl
     
     Class cla;
     if (IsKVOSubclass(object)) {
-        PatchKVOSubclass(originClass, logicClasses);
+        PatchKVOSubclass(originClass, logicClasses, logicKey);
         cla = originClass;
     }
     else {
