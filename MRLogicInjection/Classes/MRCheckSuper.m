@@ -40,6 +40,7 @@ Class MRGetInjectionSuperClass(Class currentClass, Class logicClass) {
             break;
         }
         superClass = class_getSuperclass(superClass);
+        checkLogicClass = superClass;
     }
     
     return superClass;
@@ -49,6 +50,4 @@ BOOL MRCheckSuperResponseToSelector(Class currentClass , Class logicClass, SEL s
     Class superClass = MRGetInjectionSuperClass(currentClass, logicClass);
     return class_respondsToSelector(superClass, selector);
 }
-
-
 
