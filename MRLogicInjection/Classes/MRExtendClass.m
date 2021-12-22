@@ -17,6 +17,9 @@ static void MRExtendBaseClassWithLogicClass(Class baseClass, Class logicClass) {
         Method m = logicMethodList[i];
         class_addMethod(baseClass, method_getName(m), method_getImplementation(m), method_copyReturnType(m));
     }
+    if (logicMethodList) {
+        free(logicMethodList);
+    }
 }
 
 NSString* const KMRExtendClassKey = @"__MR_EXTEND_";
